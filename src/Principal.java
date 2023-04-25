@@ -9,6 +9,7 @@ public class Principal {
 		float altura = 0;
 		boolean val;
 		String nome;
+		String status;
 		
 		Scanner scanner = new Scanner(System.in);
 		
@@ -37,6 +38,12 @@ public class Principal {
 		paciente.getAltura()); 
 		
 		System.out.println(imc);
+		
+		Imc.statusImc(imc);
+		
+		status = Imc.statusImc(imc);
+		
+		System.out.println("Seu status é: "+ status );
 		
 				
 	}
